@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RepairScheduleDialog</class>
+ <widget class="QDialog" name="RepairScheduleDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>维修查询</string>
+  </property>
+  <widget class="QTableWidget" name="tableRepair">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>681</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>报修人登录名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>报修人</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>房号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>问题</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>维修人员</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>联系电话</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>状态</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>已评价</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AttendStateDialog</class>
+ <widget class="QDialog" name="AttendStateDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>出勤状况</string>
+  </property>
+  <widget class="QTableWidget" name="tableAttend">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>381</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>员工登录名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>员工名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>是否出勤</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLineEdit" name="edtUserName">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>261</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>171</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>搜索员工名</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSearch">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>40</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>搜索</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnSearch</sender>
+   <signal>clicked()</signal>
+   <receiver>AttendStateDialog</receiver>
+   <slot>search()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>347</x>
+     <y>51</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>search()</slot>
+ </slots>
+</ui>

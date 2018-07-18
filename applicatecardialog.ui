@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ApplicateCarDialog</class>
+ <widget class="QDialog" name="ApplicateCarDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>303</width>
+    <height>122</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>申请车位</string>
+  </property>
+  <widget class="QComboBox" name="boxCar">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>20</y>
+     <width>161</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txtCar">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>想申请的车位</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSubmit">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>90</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>提交申请</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>60</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>租金/年</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txtPrice">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>60</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 0, 4);</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnSubmit</sender>
+   <signal>clicked()</signal>
+   <receiver>ApplicateCarDialog</receiver>
+   <slot>applicate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>151</x>
+     <y>51</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>boxCar</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>ApplicateCarDialog</receiver>
+   <slot>getPrice(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>190</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>151</x>
+     <y>60</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>applicate()</slot>
+  <slot>getPrice(QString)</slot>
+ </slots>
+</ui>

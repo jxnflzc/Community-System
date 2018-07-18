@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RentCarDialog</class>
+ <widget class="QDialog" name="RentCarDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>390</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>车位出租</string>
+  </property>
+  <widget class="QTableWidget" name="tableApplicate">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>371</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>车位</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>申请人</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>申请人登录名</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="txtCar">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>搜索车位</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edtCar">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>251</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSearch">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>30</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>搜索</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>edtCar</tabstop>
+  <tabstop>btnSearch</tabstop>
+  <tabstop>tableApplicate</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnSearch</sender>
+   <signal>clicked()</signal>
+   <receiver>RentCarDialog</receiver>
+   <slot>search()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>337</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>194</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>search()</slot>
+ </slots>
+</ui>

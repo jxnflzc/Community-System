@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/language">
+        <file>qzher_en.qm</file>
+    </qresource>
+</RCC>

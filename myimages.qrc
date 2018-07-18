@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/IconPic">
+        <file>pic/addOwner.png</file>
+        <file>pic/addStaff.png</file>
+        <file>pic/backimage.jpg</file>
+        <file>pic/changeOwner.png</file>
+        <file>pic/changeStaff.png</file>
+        <file>pic/staffAttend.png</file>
+        <file>pic/appCar.png</file>
+        <file>pic/passCar.png</file>
+        <file>pic/passVacation.png</file>
+        <file>pic/reSchedule.png</file>
+        <file>pic/repair.png</file>
+        <file>pic/addCar.png</file>
+    </qresource>
+</RCC>

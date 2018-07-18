@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddCarDialog</class>
+ <widget class="QDialog" name="AddCarDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>331</width>
+    <height>153</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>331</width>
+    <height>153</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>添加车位</string>
+  </property>
+  <widget class="QLabel" name="txtCarUid">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>车位号</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edtCarUid">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>30</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txtCarOwner">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>90</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>车位所有者</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edtCarOwner">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>90</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSubmit">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>120</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>提交</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnReset">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>120</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>重置</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="boxRent">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>30</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>出租</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>租金/年</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edtPrice">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>60</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>edtCarUid</tabstop>
+  <tabstop>edtCarOwner</tabstop>
+  <tabstop>boxRent</tabstop>
+  <tabstop>btnSubmit</tabstop>
+  <tabstop>btnReset</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnReset</sender>
+   <signal>clicked()</signal>
+   <receiver>AddCarDialog</receiver>
+   <slot>reset()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>165</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnSubmit</sender>
+   <signal>clicked()</signal>
+   <receiver>AddCarDialog</receiver>
+   <slot>submit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>107</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>165</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>submit()</slot>
+  <slot>reset()</slot>
+ </slots>
+</ui>

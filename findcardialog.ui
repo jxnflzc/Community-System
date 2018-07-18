@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FindCarDialog</class>
+ <widget class="QDialog" name="FindCarDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>查询车位</string>
+  </property>
+  <widget class="QTableWidget" name="tableCar">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>531</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>车位</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>所有者</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>是否出租</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>租金/年</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>所有者姓名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>所有者车牌号</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="txtCar">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>搜索车位</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edtCar">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>441</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSearch">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>30</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>搜索</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnSearch</sender>
+   <signal>clicked()</signal>
+   <receiver>FindCarDialog</receiver>
+   <slot>search()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1007</x>
+     <y>321</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>224</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>search()</slot>
+ </slots>
+</ui>

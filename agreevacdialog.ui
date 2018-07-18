@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AgreeVacDialog</class>
+ <widget class="QDialog" name="AgreeVacDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>批假</string>
+  </property>
+  <widget class="QTableWidget" name="tableAgree">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>581</width>
+     <height>280</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>登录名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>员工名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>类型</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>理由</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

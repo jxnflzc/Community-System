@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FindStaffDialog</class>
+ <widget class="QDialog" name="FindStaffDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>员工信息</string>
+  </property>
+  <widget class="QTableWidget" name="tableStaff">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>581</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>登录名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>员工名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>联系电话</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>性别</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>职位</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>权限</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="txtStaff">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>231</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>搜索员工姓名</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edtStaff">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>460</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnStaff">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>30</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>搜索</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>edtStaff</tabstop>
+  <tabstop>btnStaff</tabstop>
+  <tabstop>tableStaff</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnStaff</sender>
+   <signal>clicked()</signal>
+   <receiver>FindStaffDialog</receiver>
+   <slot>search()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>547</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>getItem(int)</slot>
+  <slot>search()</slot>
+ </slots>
+</ui>

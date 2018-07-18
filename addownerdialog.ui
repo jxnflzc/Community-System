@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddOwnerDialog</class>
+ <widget class="QDialog" name="AddOwnerDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>384</width>
+    <height>284</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>业主登记</string>
+  </property>
+  <widget class="QLabel" name="txtOwUid">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>登录名</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txtOwName">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>业主名</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txtOwPassword">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>90</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>密码</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txtOwSex">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>30</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>性别</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txtOwHouseId">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>150</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>房号</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txtOwHouseArea">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>180</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>房屋面积</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edtOwUid">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>30</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edtOwName">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>60</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edtOwPassword">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>90</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edtOwHouseId">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>150</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edtOwHouseArea">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>180</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="boxOwSex">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>60</y>
+     <width>69</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>男</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>女</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="btnSubmit">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>250</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>提交</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnReset">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>250</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>重置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnDelete">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>180</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txtCar">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>210</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>车位</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkCar">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>210</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>同意使用该车位</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="boxCar">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>210</y>
+     <width>111</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>130</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>车牌号</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edtCarId">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>150</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txtTele">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>120</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>联系电话</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edtTele">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>120</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>edtOwUid</tabstop>
+  <tabstop>edtOwName</tabstop>
+  <tabstop>edtOwPassword</tabstop>
+  <tabstop>edtOwHouseId</tabstop>
+  <tabstop>edtOwHouseArea</tabstop>
+  <tabstop>boxOwSex</tabstop>
+  <tabstop>btnSubmit</tabstop>
+  <tabstop>btnReset</tabstop>
+  <tabstop>btnDelete</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnSubmit</sender>
+   <signal>clicked()</signal>
+   <receiver>AddOwnerDialog</receiver>
+   <slot>submit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>183</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnReset</sender>
+   <signal>clicked()</signal>
+   <receiver>AddOwnerDialog</receiver>
+   <slot>reset()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>247</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>183</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnDelete</sender>
+   <signal>clicked()</signal>
+   <receiver>AddOwnerDialog</receiver>
+   <slot>owDelete()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>297</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>183</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>submit()</slot>
+  <slot>reset()</slot>
+  <slot>owDelete()</slot>
+ </slots>
+</ui>

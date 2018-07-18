@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddPersonDialog</class>
+ <widget class="QDialog" name="AddPersonDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>260</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>添加员工</string>
+  </property>
+  <widget class="QLabel" name="txtAddUid">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>员工登录名</string>
+   </property>
+   <property name="buddy">
+    <cstring>edtAddUid</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txtAddUserName">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>员工名</string>
+   </property>
+   <property name="buddy">
+    <cstring>edtAddUserName</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txtAddPassword">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>密码</string>
+   </property>
+   <property name="buddy">
+    <cstring>edtAddPassword</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txtAddSex">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>20</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>性别</string>
+   </property>
+   <property name="buddy">
+    <cstring>boxAddSex</cstring>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edtAddUid">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edtAddUserName">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>60</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edtAddPassword">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>100</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="boxAddSex">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>20</y>
+     <width>69</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>男</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>女</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="txtAddStatus">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>180</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>职位</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txtAddPower">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>100</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>权限</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edtAddStatus">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>180</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="boxAddPower">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>100</y>
+     <width>69</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="btnAdd">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>220</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>添加</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnReset">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>220</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>重置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnDelete">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>140</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edtTele">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>140</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txtTele">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>联系电话</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>edtAddUid</tabstop>
+  <tabstop>edtAddUserName</tabstop>
+  <tabstop>edtAddPassword</tabstop>
+  <tabstop>edtAddStatus</tabstop>
+  <tabstop>boxAddSex</tabstop>
+  <tabstop>boxAddPower</tabstop>
+  <tabstop>btnAdd</tabstop>
+  <tabstop>btnReset</tabstop>
+  <tabstop>btnDelete</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnAdd</sender>
+   <signal>clicked()</signal>
+   <receiver>AddPersonDialog</receiver>
+   <slot>addPerson()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnReset</sender>
+   <signal>clicked()</signal>
+   <receiver>AddPersonDialog</receiver>
+   <slot>reset()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>247</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnDelete</sender>
+   <signal>clicked()</signal>
+   <receiver>AddPersonDialog</receiver>
+   <slot>stDelete()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>317</x>
+     <y>151</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>addPerson()</slot>
+  <slot>reset()</slot>
+  <slot>stDelete()</slot>
+ </slots>
+</ui>
